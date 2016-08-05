@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollViewPro">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageGoods"
+            android:src="@drawable/notimage"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:paddingLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textName"
+            android:layout_below="@+id/imageGoods"
+            android:textSize="20dp"
+            android:textColor="#f000a0"
+            android:layout_marginTop="8dp"
+            android:text="名称"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textName"
+            android:layout_marginTop="10dp"
+            android:id="@+id/LinLayout1">
+
+            <TextView
+                android:paddingLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textAuthor"
+                android:text="作者"
+                android:textSize="17dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textType"
+                android:text="类型"
+                android:textSize="17dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LinLayout2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/LinLayout1">
+
+            <TextView
+                android:paddingLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textOldPrice"
+                android:text="原价"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                android:textColor="#f000a0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textLength"
+                android:gravity="center_vertical"
+                android:text="时长"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:paddingLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LinLayout2"
+            android:id="@+id/textDescribe"
+            android:text="描述"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textDescribe"
+            android:layout_marginTop="20dp"
+            android:id="@+id/RatingBar1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textScore"
+            android:text="评 分"
+            android:gravity="center"
+            android:textColor="#f55617"
+            android:textSize="18sp"
+            android:layout_alignBottom="@+id/buttonEvaluate"
+            android:layout_toRightOf="@+id/RatingBar1"
+            android:layout_toEndOf="@+id/RatingBar1"
+            android:layout_alignTop="@+id/RatingBar1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonEvaluate"
+            android:text="查看评论"
+            android:textSize="15dp"
+            android:background="#a0bef5"
+            android:layout_marginLeft="15dp"
+            android:layout_alignTop="@+id/RatingBar1"
+            android:layout_toRightOf="@+id/textScore"
+            android:layout_toEndOf="@+id/textScore" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图文详情"
+            android:gravity="center"
+            android:id="@+id/textImage"
+            android:layout_marginTop="20dp"
+            android:background="#d6d5d5"
+            android:textSize="18sp"
+            android:layout_below="@+id/textScore"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notimage"
+            android:layout_below="@id/textImage"
+            android:layout_marginTop="15dp"
+            android:id="@+id/imageNot"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+</ScrollView>

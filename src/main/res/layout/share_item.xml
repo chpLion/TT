@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/zone_head_image"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/defaulthead"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:padding="10dp"
+            android:id="@+id/tv_share_username"
+            android:textSize="20dp"
+            android:text="userModel"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/tv_share_time"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="10:21"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/tv_share_content"
+        android:textSize="20dp"
+        android:text="今天我们的新闻就是说你实在是太蠢淡了吧 毕竟我们还是不能够的"
+        />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="120dp"
+            android:id="@+id/img_share_video"
+            android:src="@drawable/defaultimg"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

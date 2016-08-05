@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_vedio_type"
+            android:layout_centerVertical="true"
+            android:text="体育"
+            android:textSize="17dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_type_click"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="false"
+            android:textColor="@drawable/text_style"
+            android:text="猛戳这里 > "
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#74c7cd"
+        ></View>
+    <MyView.MyGridView
+        android:layout_width="match_parent"
+        android:id="@+id/vedio_grid"
+        android:numColumns="3"
+        android:layout_height="match_parent">
+
+    </MyView.MyGridView>
+</LinearLayout>

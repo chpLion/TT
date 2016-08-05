@@ -1,0 +1,78 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/img_person_zone_video_thum"
+            android:src="@drawable/defaultimg"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft= "10dp"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_person_zone_video_name"
+                android:layout_weight= "1"
+                android:text = "视频名称"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/tv_person_zone_video_length"
+                android:layout_marginTop="10dp"
+                android:text="时长"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/tv_my_upload_video_price"
+                android:layout_marginTop="10dp"
+                android:text="价格"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型"
+                    android:id="@+id/tv_person_zone_video_type"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="描述:"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="暂无描述"
+        android:id="@+id/tv_person_zone_video_description"
+        />
+</LinearLayout>

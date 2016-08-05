@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/img_vedio"
+            android:layout_margin = "5dp"
+            android:src="@drawable/defaultimg"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:background="@drawable/textview_bg"
+            android:id="@+id/tv_price"
+            android:text="¥ 25"
+            android:textSize="10dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#99000000"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="04：10"
+            android:id="@+id/tv_vedio_length"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_vedio_name"
+        android:layout_marginLeft="5dp"
+        android:text="java入门"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

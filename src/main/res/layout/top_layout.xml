@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:background="#74c7cd"
+    android:layout_height="40dp">
+
+
+    <MyView.RoundImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/img_logo"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首页"
+        android:id="@+id/tv_main_top_titile"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/img_dowload"
+        android:layout_centerVertical="true"
+        android:src="@drawable/download1"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/img_upload"
+        android:scaleType="centerInside"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/img_upload"
+        android:layout_centerVertical="true"
+        android:src="@drawable/upload1"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/btn_add"
+        android:scaleType="centerInside"
+         />
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@drawable/edittext_bg"
+        android:padding="15dp"
+        android:focusable="false"
+        android:id="@+id/et_main_search"
+        android:layout_centerInParent="true"
+        />
+     <ImageView
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:src="@drawable/search_et"
+         android:layout_alignLeft="@+id/et_main_search"
+         android:layout_alignBottom="@+id/et_main_search"
+         android:layout_alignTop="@+id/et_main_search"
+         android:id="@+id/img_hint"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_search_hint"
+        android:layout_alignLeft="@+id/et_main_search"
+        android:layout_alignBottom="@+id/et_main_search"
+        android:layout_marginLeft="30dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/main_color"
+        android:layout_alignTop="@+id/et_main_search"
+        android:text="搜视频搜剧本"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/img_search"
+        android:layout_centerVertical="true"
+        android:src="@drawable/search"
+        android:gravity="center"
+        android:visibility="gone"
+        android:scaleType="centerInside"
+        android:layout_toLeftOf="@+id/img_dowload"
+         />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btn_add"
+        android:layout_centerVertical="true"
+        android:src="@drawable/add1"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

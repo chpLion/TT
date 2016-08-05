@@ -1,0 +1,25 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <include layout="@layout/reply_top_layout"
+        android:id="@+id/top"
+        />
+    <MyView.RefreshListview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/top"
+        android:id="@+id/lv_request_detail_list"
+        ></MyView.RefreshListview>
+   <TextView
+       android:layout_width="match_parent"
+       android:gravity="center"
+       android:id="@+id/tv_reply_hint"
+       android:layout_below="@+id/lv_request_detail_list"
+       android:text="暂无留言"
+       android:layout_height="wrap_content" />
+</RelativeLayout>

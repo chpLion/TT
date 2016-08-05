@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="chen.personinfo.AuthorPersonZoneActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/defaultimg"
+        android:layout_height="wrap_content">
+
+        <MyView.RoundImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/defaulthead"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img_author_person_zone_head"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@+id/img_author_person_zone_head"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_below="@+id/img_author_person_zone_head"
+                android:text="用户"
+                android:id="@+id/tv_author_person_zone_username"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:id="@+id/tv_author_person_zone_usertag"
+                android:layout_height="wrap_content"
+                android:text="学生"
+                android:background="@drawable/textview_bg"
+                android:layout_toRightOf="@+id/tv_author_person_zone_username"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:id="@+id/tv_author_person_zone_description"
+            android:layout_below="@+id/ll"
+            android:text="我是一个信息安全的学生 不要惹我"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="粉丝："
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100,382"
+                    android:id="@+id/tv_author_person_zone_fans_count"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主人寄语:"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关注"
+            android:background="@color/button_color"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tv_author_person_zone_moto"
+        android:layout_marginRight="10dp"
+        android:text="你说不要自作自受自己创造伤悲 谁都可以忘记谁。"
+        />
+
+</LinearLayout>

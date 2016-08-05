@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="暂无上传任务"
+        android:id="@+id/tv_no_upload"
+        android:visibility="gone"
+        android:textColor="@color/main_color"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/ll_upload_view"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/img_upload_video"
+            android:src="@drawable/defaultimg"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft= "10dp"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_upload_video_name"
+                android:layout_weight= "1"
+                android:text = "等待中"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/tv_upload_video_description"
+                android:layout_marginTop="10dp"
+                android:text="等待中"
+                />
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="5dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:id="@+id/pb_uploading"
+                android:layout_height="0dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_height="0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="准备上传"
+                    android:id="@+id/tv_upload_status"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_upload_counter"
+                    android:layout_alignParentRight="true"
+                    android:text="0%"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

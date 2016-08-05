@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chen.myapplication"
+    android:versionCode="2"
+    android:versionName="1.1">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    <!-- 友盟sdk 需要 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 友盟sdk 需要 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 友盟sdk 需要 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 友盟sdk 需要 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" / -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/> -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="tt乐享"
+        android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 播放界面demo -->
+        <activity
+            android:name=".PlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <!-- 已经缓存的视频界面demo -->
+        <activity
+            android:name=".CachedActivity"
+            android:label="@string/title_activity_cached"
+            android:launchMode="singleTask" />
+        <!-- 正在缓存的视频展示界面demo -->
+        <activity
+            android:name=".CachingActivity"
+            android:label="@string/title_activity_caching"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".VideoTypeActivity"
+            android:label="@string/title_activity_vedio_type" />
+        <activity
+            android:name=".VideoPlayActivity"
+            android:label="@string/title_activity_vedio_play" />
+        <activity
+            android:name=".UpLoadVedioActivty"
+            android:label="@string/title_activity_up_load_vedio_activty" />
+        <activity
+            android:name=".SelectLocalVedioActivity"
+            android:label="@string/title_activity_select_local_vedio" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".RegistActivity"
+            android:label="@string/title_activity_regist" />
+        <activity
+            android:name=".PersonDetailActivity"
+            android:label="@string/title_activity_person_detail" />
+        <activity
+            android:name=".RequestVideoActivity"
+            android:label="@string/title_activity_request_video" />
+        <activity
+            android:name="chen.trade.RequestDetailAcitvity"
+            android:label="@string/title_activity_request_detail_acitvity" />
+        <activity
+            android:name="chen.trade.ReplyActivity"
+            android:label="@string/title_activity_reply" />
+        <activity
+            android:name="chen.trade.BuyNowAcitivity"
+            android:label="buynowactivity" />
+        <activity
+            android:name="chen.trade.ListOrderedActivity"
+            android:label="listorderactivity" />
+        <!--
+        &lt;!&ndash; 以下两个为下载时需要的添加的Service &ndash;&gt;
+        <service
+            android:name="com.youku.service.download.DownloadService"
+            android:label="Youku Download Service"
+            android:process=":download">
+            <intent-filter android:priority="1000">
+
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.youku.service.acc.AcceleraterService"
+            android:process=":accelerater">
+            <intent-filter android:priority="1000">
+
+            </intent-filter>
+        </service>
+        -->
+
+
+        <!-- client_id及client_secret配置 -->
+
+        <meta-data
+            android:name="client_id"
+            android:value="db316bb37424f8a1" />
+        <meta-data
+            android:name="client_secret"
+            android:value="dbd667a0c145ee900dc279915b304b28" />
+
+        <activity
+            android:name=".UploadVideoRecordActivity"
+            android:label="@string/title_activity_upload_video_record" />
+        <activity android:name=".BuyActivity" />
+        <activity android:name=".MyOrderActivity" />
+        <activity android:name=".MyCartActivity" />
+
+        <service android:name="chen.upload.UploadService" />
+
+        <activity
+            android:name=".WriteVidioCommentActivity"
+            android:label="@string/title_activity_write_vidio_comment" />
+        <activity
+            android:name="chen.personinfo.AuthorPersonZoneActivity"
+            android:label="@string/title_activity_author_person_zone"></activity>
+    </application>
+
+</manifest>

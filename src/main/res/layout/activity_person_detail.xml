@@ -1,0 +1,22 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/comman_top_layout"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/list_person_detail"
+        android:layout_marginTop="8dp"
+        android:dividerHeight="10dp"
+        android:layout_below="@+id/ll"
+        android:layout_height="match_parent"></ListView>
+</RelativeLayout>

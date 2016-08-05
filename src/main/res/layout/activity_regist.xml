@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="用户名"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_regist_name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:id="@+id/et_regist_password"
+        android:layout_below="@id/et_regist_name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="邮箱地址"
+        android:inputType="textEmailAddress"
+        android:id="@+id/et_regist_email"
+        android:layout_below="@id/et_regist_password"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_below="@id/et_regist_email"
+        android:id="@+id/radi_sex"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content" >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="男"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_regist"
+        android:text="注册"
+        android:background="@drawable/button_bg"
+        android:layout_below="@id/radi_sex"
+        />
+</RelativeLayout>

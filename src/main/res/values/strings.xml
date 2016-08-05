@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TT乐享</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_caching">CachingActivity</string>
+    <string name="title_activity_vedio_type">vediotype</string>
+    <string name="title_activity_vedio_play">vedioplay</string>
+    <string name="title_activity_up_load_vedio_activty">upload</string>
+    <string name="title_activity_select_local_vedio">selectvideo</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_regist">regist</string>
+    <string name="title_activity_person_detail">persondetail</string>
+    <string name="title_activity_request_video">requestvideo</string>
+    <string name="title_activity_request_detail_acitvity">requestdetail</string>
+    <string name="title_activity_reply">reply</string>
+    <string name="title_activity_cached">CachedActivity</string>
+    <string name="title_activity_upload_record">UploadRecordActivity</string>
+    <color name="main_color">#74c7cd</color>
+    <color name="tab_color">#4e9a9f</color>
+    <color name="line_color">#aaa0a0a0</color>
+    <color name="button_color">#fdc90c</color>
+    <string name="title_activity_upload_video_record">UploadVideoRecordActivity</string>
+    <string name="title_activity_write_vidio_comment">WriteVidioCommentActivity</string>
+    <string name="title_activity_author_person_zone">AuthorPersonZoneActivity</string>
+</resources>

@@ -1,0 +1,37 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll"
+        android:layout_height="wrap_content">
+        <include layout="@layout/request_top"/>
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ll"
+        android:id="@+id/et_request_title"
+        android:hint="标题(响亮的标题容易获得关注哦)"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_request_content"
+        android:layout_below="@+id/et_request_title"
+        android:lines="5"
+        android:gravity="left"
+        android:hint="你的具体要求"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_request_price"
+        android:layout_below="@+id/et_request_content"
+        android:hint="酬金（多点酬金更容易实现哦）"
+        />
+</RelativeLayout>

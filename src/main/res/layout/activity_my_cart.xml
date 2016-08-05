@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:text="我的购物车"
+        android:textColor="#f0f0f0"
+        android:background="#0090f0"
+        android:id="@+id/textTitle" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/textTitle"
+        android:foregroundGravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:divider="#00000000"
+        android:dividerHeight="18dp"
+        android:layout_above="@+id/linLayBow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#eaeaea"
+        android:id="@+id/linLayBow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textALlSel"
+            android:text="全选"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/checkboxSelAll"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总价"
+            android:textSize="15dp"
+            android:textColor="#f01010"
+            android:id="@+id/textViewTotal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_weight="2" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:gravity="center"
+            android:id="@+id/buttonDel"
+            android:textColor="#f0f0f0"
+            android:background="#eff248"
+            android:layout_weight="1"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买"
+            android:gravity="center"
+            android:id="@+id/buttonBuy"
+            android:textColor="#f0f0f0"
+            android:background="#0090f0"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

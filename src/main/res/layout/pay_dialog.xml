@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewPayHintPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:text="密码："
+        android:layout_marginTop="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editTextPayPwd"
+        android:layout_toStartOf="@+id/editTextPayPwd" />
+
+    <EditText
+        android:id="@+id/editTextPayPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:layout_alignTop="@+id/textViewPayHintPwd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp" />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="价格:10.00元"
+        android:textColor="#f01010"
+        android:gravity="center"
+        android:id="@+id/textPrice" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系TA"
+        android:id="@+id/buttonLink"
+        android:background="#3669b7" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加入购物车"
+        android:background="#cabe33"
+        android:textColor="#f0f0f0"
+        android:id="@+id/buttonAddCart"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f01010"
+        android:textColor="#f0f0f0"
+        android:text="立即购买"
+        android:id="@+id/buttonBuy"
+        android:layout_weight="1"/>
+
+</LinearLayout>

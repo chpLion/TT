@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textViewBuyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#e8ffe8"
+        android:gravity="center"
+        android:textSize="40px"
+        android:text="当前订单" />
+
+    <Button
+        android:id="@+id/buttonBCancel"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="取消"
+        android:background="#f01010"
+        android:textColor="#f0f0f0" />
+
+    <Button
+        android:id="@+id/buttonBAffirm"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#f01010"
+        android:text="确认"
+        android:textColor="#f0f0f0" />
+
+    <ListView
+        android:id="@+id/listViewOfBuy"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewBuyName"
+        android:layout_marginTop="41dp"
+        android:minHeight="200dp" >
+    </ListView>
+
+</RelativeLayout>

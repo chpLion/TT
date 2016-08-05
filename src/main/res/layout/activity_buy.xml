@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/product_detail"
+        android:id="@+id/includeProduct">
+        <!--商品详情-->
+    </include>
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/buy_bottom"
+        android:id="@+id/includeBottom"
+        android:layout_weight="10">
+    </include>
+
+</LinearLayout>

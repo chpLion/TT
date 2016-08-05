@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+
+
+    <com.youku.player.base.YoukuPlayerView
+        android:id="@+id/full_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.youku.player.base.YoukuPlayerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="评论"
+            android:id="@+id/tv_video_play_write_comment"
+            android:textColor="@drawable/text_style"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="下载"
+            android:id="@+id/tv_video_play_download"
+            android:textColor="@drawable/text_style"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="收藏"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_video_play_collect"
+            android:textColor="@drawable/text_style"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <MyView.RoundImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/img_video_play_author_head_image"
+            android:src="@drawable/defaulthead"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_video_play_author_name"
+            android:text="作者"
+            android:layout_toRightOf="@+id/img_video_play_author_head_image"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <MyView.RefreshListview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_video_play_comment"
+        ></MyView.RefreshListview>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/tv_video_play_hint"
+        android:text="暂无评论,点我重试"
+        android:textColor="@color/main_color"
+        />
+
+</LinearLayout>
